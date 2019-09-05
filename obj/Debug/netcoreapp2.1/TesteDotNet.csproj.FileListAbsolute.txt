@@ -1,0 +1,11 @@
+C:\Users\idosy\Desktop\TesteDotNet\bin\Debug\netcoreapp2.1\TesteDotNet.deps.json
+C:\Users\idosy\Desktop\TesteDotNet\bin\Debug\netcoreapp2.1\TesteDotNet.runtimeconfig.json
+C:\Users\idosy\Desktop\TesteDotNet\bin\Debug\netcoreapp2.1\TesteDotNet.runtimeconfig.dev.json
+C:\Users\idosy\Desktop\TesteDotNet\bin\Debug\netcoreapp2.1\TesteDotNet.dll
+C:\Users\idosy\Desktop\TesteDotNet\bin\Debug\netcoreapp2.1\TesteDotNet.pdb
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.csprojAssemblyReference.cache
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.csproj.CoreCompileInputs.cache
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.AssemblyInfoInputs.cache
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.AssemblyInfo.cs
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.dll
+C:\Users\idosy\Desktop\TesteDotNet\obj\Debug\netcoreapp2.1\TesteDotNet.pdb

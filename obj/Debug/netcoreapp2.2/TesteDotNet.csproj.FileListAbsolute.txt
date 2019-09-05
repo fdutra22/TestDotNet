@@ -1,0 +1,11 @@
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\bin\Debug\netcoreapp2.2\TesteDotNet.deps.json
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\bin\Debug\netcoreapp2.2\TesteDotNet.runtimeconfig.json
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\bin\Debug\netcoreapp2.2\TesteDotNet.runtimeconfig.dev.json
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\bin\Debug\netcoreapp2.2\TesteDotNet.dll
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\bin\Debug\netcoreapp2.2\TesteDotNet.pdb
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.csprojAssemblyReference.cache
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.AssemblyInfoInputs.cache
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.AssemblyInfo.cs
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.dll
+C:\Users\fabio\Desktop\Toctao\TesteDotNet\obj\Debug\netcoreapp2.2\TesteDotNet.pdb
