@@ -7,7 +7,7 @@ using TesteDotNet.Utils;
 
 namespace TesteDotNet
 {
-
+    //Classe Principal
     class Program
     {
         public static bool continua = false;
@@ -22,6 +22,7 @@ namespace TesteDotNet
                 var entrada = Console.ReadLine();
 
                 var nums = entrada.Split(";");
+                //swith para a escolha do usuario das operações.
                 switch (nums[0].ToString())
                 {
 
@@ -84,6 +85,8 @@ namespace TesteDotNet
 
         }
 
+
+        //Methodos Soma com a sobrecarga -->>>
         public static double Soma(double n1, double n2)
         {
             double resultado = 0.0;
@@ -120,7 +123,10 @@ namespace TesteDotNet
             }
             return resultado;
         }
+        //--->
 
+
+        //Methodo Subtração
         public static double Subtracao(double n1, double n2)
         {
             double resultado = 0.0;
@@ -138,6 +144,7 @@ namespace TesteDotNet
             return resultado;
         }
 
+        //Methodo Multiplicacao
         public static double Multiplicacao(double n1, double n2)
         {
             double resultado = 0.0;
@@ -155,6 +162,7 @@ namespace TesteDotNet
             return resultado;
         }
 
+        //Methodo Divisao
         public static double Divisao(double n1, double n2)
         {
             double resultado = 0.0;
@@ -172,7 +180,7 @@ namespace TesteDotNet
             return resultado;
         }
 
-
+        //Methodo para calcular a media da soma
         public static double MediaSoma(List<double> ns)
         {
             double resultado = 0.0;
@@ -193,6 +201,7 @@ namespace TesteDotNet
             return resultado;
         }
 
+        //Methodo para calcular a media da soma de numeros pares
         public static double MediaSomaPares(List<double> ns)
         {
             double resultado = 0.0;
@@ -222,7 +231,7 @@ namespace TesteDotNet
             return resultado;
         }
 
-
+        //Methodo para a escolha das operações
         public static void MsgOperacaoes()
         {
             continua = true;
@@ -233,6 +242,7 @@ namespace TesteDotNet
                 "\n Obs: Para a soma você pode escolher mais que 2 numeros, ex: 1;2;2......;n;");
         }
 
+        //Methodo para continua com as operaçoes
         public static void MsgContinua()
         {
 
@@ -251,10 +261,14 @@ namespace TesteDotNet
             }
         }
 
+
+        //Escreve no console printa na tela
         public static void EscreveConsole(string text)
         {
             Console.Write("{0}", text);
         }
+
+        //Methodo para colocar em vermelho as mensagem de erro.
         public static void ChangeColor()
         {
             Console.BackgroundColor = ConsoleColor.Red;
