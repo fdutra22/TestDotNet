@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\idosy\\Desktop\\TesteDotNet\\TesteDotNet.csproj",
+      "projectUniqueName": "C:\\Users\\idosy\\Documents\\GitHub\\TestDotNet\\TesteDotNet.csproj",
       "projectName": "TesteDotNet",
-      "projectPath": "C:\\Users\\idosy\\Desktop\\TesteDotNet\\TesteDotNet.csproj",
+      "projectPath": "C:\\Users\\idosy\\Documents\\GitHub\\TestDotNet\\TesteDotNet.csproj",
       "packagesPath": "C:\\Users\\idosy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\idosy\\Desktop\\TesteDotNet\\obj\\",
+      "outputPath": "C:\\Users\\idosy\\Documents\\GitHub\\TestDotNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

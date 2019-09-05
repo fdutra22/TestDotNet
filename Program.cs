@@ -92,8 +92,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 Console.WriteLine("Erro ao executar a Soma; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -110,8 +109,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 foreach (var item in ns)
                 {
                     Console.WriteLine("Erro ao executar a Soma; Valor: " + item);
@@ -131,8 +129,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 Console.WriteLine("Erro ao executar a Subtração; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -149,8 +146,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 Console.WriteLine("Erro ao executar a Mutliplicação; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -167,8 +163,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 Console.WriteLine("Erro ao executar a Divisão; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -186,8 +181,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 foreach (var item in ns)
                 {
                     Console.WriteLine("Erro ao executar a Media da Soma; Valor: " + item);
@@ -216,8 +210,7 @@ namespace TesteDotNet
             }
             catch (Exception ex)
             {
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.White;
+                ChangeColor();
                 foreach (var item in ns)
                 {
                     Console.WriteLine("Erro ao executar a Media da Soma; Valor: " + item);
@@ -257,7 +250,11 @@ namespace TesteDotNet
             }
         }
 
-
+        public static void ChangeColor()
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+        }
         public static void LerArquivo()
         {
             try
@@ -322,7 +319,7 @@ namespace TesteDotNet
                 }
             }catch(Exception ex)
             {
-
+                Console.Write("{0}", " erro ao executar o arquivo");
             }
         }
     }
