@@ -5,6 +5,7 @@ using System.Text;
 
 namespace TesteDotNet.Utils
 {
+    //Clase para ler um arquivo.
     public class LerArquivo
     {
         public  LerArquivo()
@@ -26,6 +27,8 @@ namespace TesteDotNet.Utils
                 {
                     var nums = item.Split(";");
                     var nome = nums[0];
+
+                    //se for soma
                     if (item.Contains("Soma"))
                     {
                         if (nums.Length == 4)
@@ -45,12 +48,14 @@ namespace TesteDotNet.Utils
                         }
                     }
 
+                    //Se contem divisao
                     if (item.Contains("Divis"))
                     {
                         var resultadoDivisaso = Program.Divisao(double.Parse(nums[2]), double.Parse(nums[3]));
                         dicionario.Add(nome, resultadoDivisaso);
                     }
 
+                    //se contais subtração
                     if (item.Contains("Subtra"))
                     {
                         var resultadoSubtracao = Program.Subtracao(double.Parse(nums[2]), double.Parse(nums[3]));
@@ -58,6 +63,7 @@ namespace TesteDotNet.Utils
 
                     }
 
+                    //se for multiplicacao
                     if (item.Contains("Multipl"))
                     {
                         var resultadoMultiplicacao = Program.Multiplicacao(double.Parse(nums[2]), double.Parse(nums[3]));
