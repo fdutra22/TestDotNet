@@ -14,7 +14,7 @@ namespace TesteDotNet
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Seja Bem Vindo!");
+            EscreveConsole("Seja Bem Vindo!");
             MsgOperacaoes();
 
             while (continua)
@@ -29,7 +29,7 @@ namespace TesteDotNet
                         if (nums.Length == 3)
                         {
                             var resultadoSoma = Soma(double.Parse(nums[1]), double.Parse(nums[2]));
-                            Console.WriteLine("O Resultado da operação foi: " + resultadoSoma);
+                            EscreveConsole("O Resultado da operação foi: " + resultadoSoma);
                         }
                         else if (nums.Length > 3)
                         {
@@ -37,19 +37,19 @@ namespace TesteDotNet
                             var listaNumeros = listaDouble.ToList();
                             listaNumeros.RemoveAt(0);
                             var resultadoSoma = Soma(listaNumeros);
-                            Console.WriteLine("O Resultado da operação foi: " + resultadoSoma);
-                            Console.WriteLine("Deseja exibir a Média? (S) sim, (N) não ou (P) para médias dos numeros pares");
+                            EscreveConsole("O Resultado da operação foi: " + resultadoSoma);
+                            EscreveConsole("Deseja exibir a Média? (S) sim, (N) não ou (P) para médias dos numeros pares");
                             var key = Console.ReadKey();
                             if (key.Key == ConsoleKey.S)
                             {
                                 var resultadoMedia = MediaSoma(listaNumeros);
-                                Console.WriteLine("O Resultado da média foi: " + resultadoMedia);
+                                EscreveConsole("O Resultado da média foi: " + resultadoMedia);
                             }
 
                             if (key.Key == ConsoleKey.P)
                             {
                                 var resultadoMedia = MediaSomaPares(listaNumeros);
-                                Console.WriteLine("O Resultado da média foi: " + resultadoMedia);
+                                EscreveConsole("O Resultado da média foi: " + resultadoMedia);
                             }
 
                         }
@@ -57,17 +57,17 @@ namespace TesteDotNet
                         break;
                     case "2":
                         var resultadoSubtracao = Subtracao(double.Parse(nums[1]), double.Parse(nums[2]));
-                        Console.WriteLine("O Resultado da operação foi: " + resultadoSubtracao);
+                        EscreveConsole("O Resultado da operação foi: " + resultadoSubtracao);
                         MsgContinua();
                         break;
                     case "3":
                         var resultadoMutliplicacao = Multiplicacao(double.Parse(nums[1]), double.Parse(nums[2]));
-                        Console.WriteLine("O Resultado da operação foi: " + resultadoMutliplicacao);
+                        EscreveConsole("O Resultado da operação foi: " + resultadoMutliplicacao);
                         MsgContinua();
                         break;
                     case "4":
                         var resultadoDivisao = Divisao(double.Parse(nums[1]), double.Parse(nums[2]));
-                        Console.WriteLine("O Resultado da operação foi: " + resultadoDivisao);
+                        EscreveConsole("O Resultado da operação foi: " + resultadoDivisao);
                         MsgContinua();
                         break;
 
@@ -75,7 +75,7 @@ namespace TesteDotNet
                         new LerArquivo();
                         break;
                     default:
-                        Console.WriteLine("\n  Argumento inválido");
+                        EscreveConsole("\n  Argumento inválido");
                         MsgContinua();
                         break;
                 }
@@ -94,7 +94,7 @@ namespace TesteDotNet
             catch (Exception ex)
             {
                 ChangeColor();
-                Console.WriteLine("Erro ao executar a Soma; Valores: " + n1 + " - " + n2);
+                EscreveConsole("Erro ao executar a Soma; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
             }
@@ -113,7 +113,7 @@ namespace TesteDotNet
                 ChangeColor();
                 foreach (var item in ns)
                 {
-                    Console.WriteLine("Erro ao executar a Soma; Valor: " + item);
+                    EscreveConsole("Erro ao executar a Soma; Valor: " + item);
                 }
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -131,7 +131,7 @@ namespace TesteDotNet
             catch (Exception ex)
             {
                 ChangeColor();
-                Console.WriteLine("Erro ao executar a Subtração; Valores: " + n1 + " - " + n2);
+                EscreveConsole("Erro ao executar a Subtração; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
             }
@@ -148,7 +148,7 @@ namespace TesteDotNet
             catch (Exception ex)
             {
                 ChangeColor();
-                Console.WriteLine("Erro ao executar a Mutliplicação; Valores: " + n1 + " - " + n2);
+                EscreveConsole("Erro ao executar a Mutliplicação; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
             }
@@ -165,7 +165,7 @@ namespace TesteDotNet
             catch (Exception ex)
             {
                 ChangeColor();
-                Console.WriteLine("Erro ao executar a Divisão; Valores: " + n1 + " - " + n2);
+                EscreveConsole("Erro ao executar a Divisão; Valores: " + n1 + " - " + n2);
                 Console.ResetColor();
                 MsgOperacaoes();
             }
@@ -185,7 +185,7 @@ namespace TesteDotNet
                 ChangeColor();
                 foreach (var item in ns)
                 {
-                    Console.WriteLine("Erro ao executar a Media da Soma; Valor: " + item);
+                    EscreveConsole("Erro ao executar a Media da Soma; Valor: " + item);
                 }
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -214,7 +214,7 @@ namespace TesteDotNet
                 ChangeColor();
                 foreach (var item in ns)
                 {
-                    Console.WriteLine("Erro ao executar a Media da Soma; Valor: " + item);
+                    EscreveConsole("Erro ao executar a Media da Soma; Valor: " + item);
                 }
                 Console.ResetColor();
                 MsgOperacaoes();
@@ -227,7 +227,7 @@ namespace TesteDotNet
         {
             continua = true;
             Task.Delay(1000).Wait();
-            Console.WriteLine("Você pode executar as 4 operações básicas: \n" +
+            EscreveConsole("Você pode executar as 4 operações básicas: \n" +
                 "(1 Soma - 2 Subtração - 3 Multiplicação - 4 Divisão ou 5 para ler o arquivo" +
                 " \n escolha um número e passe os valores ex: 1;numero1;numero2" +
                 "\n Obs: Para a soma você pode escolher mais que 2 numeros, ex: 1;2;2......;n;");
@@ -237,12 +237,12 @@ namespace TesteDotNet
         {
 
             Task.Delay(1000).Wait();
-            Console.WriteLine("Pressione qualquer tecla para continuar ou ESC para sair \n");
+            EscreveConsole("Pressione qualquer tecla para continuar ou ESC para sair \n");
 
             var key = Console.ReadKey();
             if (key.Key == ConsoleKey.Escape)
             {
-                Console.Write("{0}", " OObrigado por utilizar nossa calculadora");
+                EscreveConsole(" OObrigado por utilizar nossa calculadora");
                 Environment.Exit(0);
             }
             else
@@ -251,6 +251,10 @@ namespace TesteDotNet
             }
         }
 
+        public static void EscreveConsole(string text)
+        {
+            Console.Write("{0}", text);
+        }
         public static void ChangeColor()
         {
             Console.BackgroundColor = ConsoleColor.Red;
