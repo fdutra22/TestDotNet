@@ -5,7 +5,9 @@ using System.Text;
 
 namespace TesteDotNet.Utils
 {
-    //Clase para ler um arquivo.
+    /// <summary>
+    /// Classe LerArquivo txt e exibe na tela.
+    /// </summary>
     public class LerArquivo
     {
         public  LerArquivo()
